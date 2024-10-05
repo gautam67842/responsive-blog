@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------- nav bar ------------------ */
+nav{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* logo */
+nav img{
+    height: 60px;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+/* search bar and button */
+#search_bar{
+    margin-left: auto;
+    display: flex;
+}
+
+nav input{
+    height: 30px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid black; 
+}
+
+nav button{
+    height: 30px;
+    width: 70px;
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+    cursor: pointer;
+}
+
+
+/* nav items ul and a */
+nav ul li{
+    margin: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        color: orangered;
+    }
+}
+
+/* ------------------- container -------------------- */
+
+.container{
+    margin-top: 104px;
+    width: 80%;
+}
+
+/* --------------------section 1 -------------------- */
+
+.section-1{
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://www.shutterstock.com/image-vector/home-office-workspace-concept-blank-600nw-2310240973.jpg);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* section 1 text */
+.section-1 .text{
+    margin: 50px;
+}
+
+/* section 1 image (.image is the div in wich image is stored)*/
+.section-1 .image img{
+    height: 250px;
+    transform: translate(-20%);
+}
+
+.section-1 .image{
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 10px;
+    background-repeat: no-repeat;
+}
+
+/* ----------------- section 2 ----------------- */
+
+.section-2{
+    margin-top: 20px;
+    background-color: rgb(255, 245, 223);
+    padding: 10px;
+}
+
+/* section 2 heading */
+.section-2 h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+/* section 2 articles */
+
+.article{
+    display: flex;
+    align-items: center;
+}
+
+/* article img */
+.article img{
+    max-width: 14%;
+    margin: 10px 0;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+/* article text */
+.article .text{
+    font-size: 0.8rem;
+    margin-left: 12px;
+    color: rgba(0, 0, 0, 0.813);
+    line-height:25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ------------------ side bar ----------------- */
+#menu_bar{
+    display: none;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#side_bar{
+    background-color: white;
+    height: 100vh;
+    width: 70%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1500;
+    display: none;
+}
+#side_bar li{
+    list-style: none;
+    width: 100%;
+    padding: 30px;
+
+    &:hover{
+        background-color: rgba(221, 221, 221, 0.284);
+    }
+}
+
+
+#side_bar ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ==================================================================== */
+/* ------------------- article text media queries ---------------------- */
+@media screen and (max-width:950px){
+
+    .article .text{
+        font-size: 0.7rem;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:675px){
+    .article .text{
+        font-size: 0.6rem;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:590px){
+    .article .text{
+        font-size: 0.5rem;
+        line-height: 15px;
+    }
+}
+
+@media screen and (max-width:470px){
+    .article .text{
+        font-size: 0.4rem;
+        line-height: 10px;
+    }
+}
+/* --------------- end of ariticle text media quries ---------------- */
+/* ================================================================== */
+
+
+/* --------------- side bar media quries ----------------- */
+@media screen and (max-width:960px){
+    .section-1 .image{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:819px){
+    .nav_links{
+        display: none;
+    }
+
+    #menu_bar{
+        display: block;
+    }
+
+
+    nav input{
+        width: 150px;
+    }
+
+
+    nav ul{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    hr{
+        width: 90%;
+        margin: 0 auto;
+    }
+ 
+}
+
