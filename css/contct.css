@@ -1,0 +1,54 @@
+.contact-form{ 
+    margin-top: 104px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://www.shutterstock.com/image-vector/home-office-workspace-concept-blank-600nw-2310240973.jpg);
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    text-align: left;
+    font-size: 0.8rem;
+    padding-left: 100px;
+    color: rgba(0, 0, 0, 0.772);
+}
+
+.contact-form form{
+   text-align: left;
+   font-weight: bold;
+   margin: 40px 0;
+   font-size: 1rem;
+}
+
+.contact-form form div{
+    margin: 10px 0;
+}
+
+.contact-form input{
+    width: 60%;
+    height: 40px;
+    margin: 5px 0;
+}
+
+textarea{
+    max-width: 60%;
+    min-width: 60%;
+    min-height: 200px;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button{
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+
+    &:hover{
+        background-color: rgb(255, 87, 25);
+    }
+}
+

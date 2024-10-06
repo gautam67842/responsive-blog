@@ -52,8 +52,19 @@ nav img{
 nav input{
     height: 30px;
     border-radius: 5px 0 0 5px;
-    border: 2px solid black; 
     width: 180px;
+    border: 2px solid rgba(0, 0, 0, 0.418);
+    border-right: none;
+
+
+    &:focus{
+        outline: none;
+        border-color: orangered;
+    }
+
+    &:focus nav button{
+        border-color: orangered;
+    }
 }
 
 nav button{
@@ -63,6 +74,9 @@ nav button{
     text-align: center;
     border-left: 0;
     cursor: pointer;
+    background-color: orangered;
+    border-color: orangered;
+
 }
 
 
@@ -164,7 +178,7 @@ a{
 
 footer{
     color: white;
-    background-color: rgb(160, 81, 160);
+    background-color: orangered;
     width: 100%;
     text-align: center;
     line-height: 25px;
